@@ -9,8 +9,8 @@ export const Home = ({navigation}) => {
       <ScrollView
         style={{flex: 1}}
         contentContainerStyle={{flexGrow: 1, backgroundColor: 'white'}}>
-        <Header navigation={navigation} title={['hidup', 'Mati']} />
-        <View style={{flex: 0.8, justifyContent: 'center'}}>
+        <Header navigation={navigation} title={['hidup', 'mati']} />
+        <View style={{flex: 1, justifyContent: 'flex-start'}}>
           <View style={styles.container}>
             <View style={styles.quoteHomeBox}>
               <Text style={styles.quoteHomeBoxText}>

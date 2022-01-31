@@ -1,7 +1,8 @@
 import React from 'react';
-import {ScrollView, View, Text, Image} from 'react-native';
+import {ScrollView, View, Text, Image, TextInput} from 'react-native';
 import {styles} from '../styles/global';
 import {Header} from '../components/Header';
+import {QuoteList} from '../components/QuoteList';
 
 export const Quote = ({navigation}) => {
   return (
@@ -9,35 +10,56 @@ export const Quote = ({navigation}) => {
       <ScrollView
         style={{flex: 1}}
         contentContainerStyle={{flexGrow: 1, backgroundColor: 'white'}}>
-        <Header navigation={navigation} title={['hidup', 'Mati']} />
-        <View style={{flex: 0.8, justifyContent: 'center'}}>
+        <Header navigation={navigation} title={['lokal']} />
+        <View style={{flex: 1, justifyContent: 'flex-start'}}>
           <View style={styles.container}>
             <View style={styles.quoteHomeBox}>
-              <Text style={styles.quoteHomeBoxText}>
-                "{'\n'}Berpikirlah dari belakang. Nilai dari kehidupan adalah
-                bagaimana caranya berakhir (mati).
+              <View style={styles.quoteHomeBoxAuthor}>
+                <Text style={[styles.quoteHomeBoxAuthorText, {fontSize: 18}]}>
+                  Awal Ariansyah
+                </Text>
+              </View>
+              <Text
+                style={[
+                  styles.quoteHomeBoxText,
+                  {textAlign: 'right', fontSize: 25},
+                ]}>
+                Saya sangat menyukai kerja kelompok.
               </Text>
             </View>
-            <View style={styles.quoteHomeBoxAuthor}>
-              <Text style={styles.quoteHomeBoxAuthorText}>Awal Ariansyah</Text>
-            </View>
-            <View style={styles.bbl}>
-              <View style={styles.box}>
-                <Text style={styles.boxText}>❤</Text>
+            <View style={[styles.bbl, {marginBottom: 20}]}>
+              <TextInput
+                placeholder="Cari disini ..."
+                placeholderTextColor={'#1A1A1A'}
+                style={{
+                  width: '100%',
+                  flex: 1,
+                  fontSize: 16,
+                  color: 'black',
+                  borderBottomColor: 'black',
+                  borderBottomWidth: 3,
+                }}
+              />
+              <View style={[styles.box, {marginLeft: 10, marginRight: 0}]}>
+                <Text style={styles.boxText}>❌</Text>
               </View>
-              <View style={styles.box}>
-                <Text style={styles.boxText}>🔁</Text>
+              <View style={[styles.box, {marginLeft: 10, marginRight: 0}]}>
+                <Text style={styles.boxText}>▶</Text>
               </View>
-              <View style={styles.line}></View>
             </View>
-          </View>
 
-          <Image
-            width={150}
-            height={150}
-            style={{width: 150, height: 150, alignSelf: 'center'}}
-            source={require('../assets/logo.png')}
-          />
+            <QuoteList />
+            <QuoteList />
+            <QuoteList />
+            <QuoteList />
+            <QuoteList />
+            <QuoteList />
+            <QuoteList />
+            <QuoteList />
+            <QuoteList />
+            <QuoteList />
+            <QuoteList />
+          </View>
         </View>
       </ScrollView>
     </>

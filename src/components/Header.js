@@ -8,7 +8,7 @@ export const Header = ({navigation, title}) => {
   return (
     <View
       style={{
-        flex: 0.2,
+        flex: 0,
         paddingTop: '5%',
       }}>
       <View style={[styles.container, {flexDirection: 'row'}]}>

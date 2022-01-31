@@ -2,7 +2,7 @@ import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
   container: {
-    width: '80%',
+    width: '90%',
     alignSelf: 'center',
   },
 
@@ -44,7 +44,7 @@ export const styles = StyleSheet.create({
 
   quoteHomeBox: {
     flex: 1,
-    marginBottom: 30,
+    marginBottom: 10,
   },
 
   quoteHomeBoxText: {
@@ -59,6 +59,7 @@ export const styles = StyleSheet.create({
   },
 
   quoteHomeBoxAuthorText: {
+    color: '#1A1A1A',
     fontFamily: 'Raleway-Light',
     fontSize: 20,
   },
@@ -80,7 +81,7 @@ export const styles = StyleSheet.create({
   },
 
   bbl: {
-    marginBottom: 30,
+    marginBottom: 0,
     flexDirection: 'row',
     alignItems: 'center',
   },
@@ -88,5 +89,59 @@ export const styles = StyleSheet.create({
   boxText: {
     fontSize: 20,
     color: '#1A1A1A',
+  },
+
+  cardCategory: {
+    width: '100%',
+    marginBottom: 10,
+  },
+  cardCategoryTop: {
+    backgroundColor: 'black',
+    paddingHorizontal: 10,
+    paddingBottom: 10,
+  },
+  cardCategoryBottom: {
+    fontSize: 30,
+    fontWeight: 'bold',
+    color: 'black',
+  },
+  cardCategoryMiddle: {
+    fontSize: 50,
+    fontFamily: 'Raleway-Bold',
+    color: 'white',
+  },
+
+  quoteList: {
+    width: '100%',
+    marginVertical: 10,
+  },
+
+  quoteListText: {
+    fontSize: 20,
+    color: 'black',
+  },
+
+  textInputWrapper: {
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'row',
+    marginVertical: 10,
+  },
+
+  textInput: {
+    borderWidth: 3,
+    borderColor: 'black',
+    textAlign: 'center',
+    paddingVertical: 10,
+    paddingHorizontal: 15,
+    color: 'black',
+    fontSize: 16,
+  },
+
+  textInputTitle: {
+    color: 'black',
+    fontWeight: '700',
+    textAlign: 'right',
+    fontSize: 30,
   },
 });
