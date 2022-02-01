@@ -31,6 +31,17 @@ export const Setting = ({navigation}) => {
             style={{width: 150, height: 150, alignSelf: 'center'}}
             source={require('../assets/logo.png')}
           />
+
+          <View>
+            <View></View>
+            <Text
+              style={[
+                styles.quoteHomeBoxText,
+                {textAlign: 'center', fontSize: 25},
+              ]}>
+              edgarKhusnaMaknumResti
+            </Text>
+          </View>
         </View>
       </ScrollView>
     </>
