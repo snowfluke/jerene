@@ -33,7 +33,6 @@ export const Setting = ({navigation}) => {
           />
 
           <View>
-            <View></View>
             <Text
               style={[
                 styles.quoteHomeBoxText,

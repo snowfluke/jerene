@@ -7,11 +7,21 @@ import {Quote} from './src/screens/Quote';
 import {Upload} from './src/screens/Upload';
 import {Setting} from './src/screens/Setting';
 
-const CategoryScreen = ({navigation}) => <Category navigation={navigation} />;
-const QuoteScreen = ({navigation}) => <Quote navigation={navigation} />;
-const HomeScreen = ({navigation}) => <Home navigation={navigation} />;
-const UploadScreen = ({navigation}) => <Upload navigation={navigation} />;
-const SettingScreen = ({navigation}) => <Setting navigation={navigation} />;
+const CategoryScreen = ({route, navigation}) => (
+  <Category navigation={navigation} route={route} />
+);
+const QuoteScreen = ({route, navigation}) => (
+  <Quote navigation={navigation} route={route} />
+);
+const HomeScreen = ({route, navigation}) => (
+  <Home navigation={navigation} route={route} />
+);
+const UploadScreen = ({route, navigation}) => (
+  <Upload navigation={navigation} route={route} />
+);
+const SettingScreen = ({route, navigation}) => (
+  <Setting navigation={navigation} route={route} />
+);
 const Drawer = createDrawerNavigator();
 
 export default function App() {
